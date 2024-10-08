@@ -1,6 +1,6 @@
 {
   "name": "num2talk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
@@ -27,15 +27,25 @@
     "node": "20.x"
   },
   "keywords": [
-    "num2talk",
-    "numbertotext",
-    "numbertotalk"
-  ],
-  "description": "Convert numbers to text.",
+  "num2talk",
+  "numbertotext",
+  "numbertotalk",
+  "language",
+  "multilanguage",
+  "numberconversion",
+  "textconversion"
+],
+  "description": "Convert numbers to text in multiple languages including English, Bengali, Hindi, Arabic, and more.",
   "author": {
     "name": "Zobaidul Kazi",
-    "url": "https://github.com/zobkazi"
+    "url": "https://zobkazi.github.io"
   },
+  "maintainers": [
+    {
+      "name": "Zobaidul Kazi",
+      "email": "zobkazi@pm.me"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/zobkazi/num2talk"
