@@ -1,4 +1,5 @@
-import { trimLeadingNegatives, getWholeNumber, getDecimalNumber } from '../utils/num2WordUtils';
+// src/languages/num2Word.ts
+import { trimLeadingNegatives, getWholeNumber, getDecimalNumber } from '../utils/num2English';
 
 export function num2Word(number: number | string): string {
     if (number === '' || (typeof number !== 'number' && typeof number !== 'string')) {

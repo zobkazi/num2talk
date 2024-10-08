@@ -45,7 +45,7 @@ const largeNumbers: Record<string, string> = {
 };
 
 // Main export function to handle both small and large numbers
-export function num2Bn(number: string): string {
+export function num2Money(number: string): string {
     if (number.length <= 2) {
         return convertSmallNumbers(number); // Handle numbers up to 99
     } else if (number.length <= 3) {
@@ -89,10 +89,10 @@ function convertLargeNumbers(number: string): string {
         if (parseInt(group, 10) > 0) {
             if (index === 0 && groups.length === 2) {
                 // Special case for thousands (like 9990)
-                result += num2Bn(group) + ' হাজার';
+                result += num2Money(group) + ' হাজার';
             } else {
                 // For larger numbers, apply the standard formatting
-                result += num2Bn(group) + ' ' + (largeNumbers[(groups.length - 1 - index)] || '') + ' ';
+                result += num2Money(group) + ' ' + (largeNumbers[(groups.length - 1 - index)] || '') + ' ';
             }
         }
     });

@@ -1,0 +1,49 @@
+{
+    "languages": [
+      {
+        "name": "Bengali",
+        "code": "bd"
+      },
+      {
+        "name": "Chinese",
+        "code": "cn"
+      },
+      {
+        "name": "Spanish",
+        "code": "es"
+      },
+      {
+        "name": "English",
+        "code": "en"
+      },
+      {
+        "name": "Arabic",
+        "code": "sa"
+      },
+      {
+        "name": "Hindi",
+        "code": "in"
+      },
+      {
+        "name": "Portuguese",
+        "code": "pt"
+      },
+      {
+        "name": "Russian",
+        "code": "ru"
+      },
+      {
+        "name": "French",
+        "code": "fr"
+      },
+      {
+        "name": "Japanese",
+        "code": "jp"
+      },
+      {
+        "name": "Urdu",
+        "code": "pk"
+      }
+    ]
+  }
+  
