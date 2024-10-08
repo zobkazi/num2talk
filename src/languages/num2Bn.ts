@@ -1,7 +1,7 @@
 // src/languages/num2bn.ts
 import { num2Money } from '../utils/num2Bengali'; // Import Bangla number converter
 
-export default function num2Bangla(number: number | string): string {
+const num2Bangla = (number: number | string): string => {
     const stringNumber = number.toString().replace(/,/g, ''); // Remove commas if any
     const [wholeNumber, decimalNumber] = stringNumber.split('.');
 
@@ -15,4 +15,6 @@ export default function num2Bangla(number: number | string): string {
 
     return wordedMoney.trim();
 }
+
+export default num2Bangla;
 

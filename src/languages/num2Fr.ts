@@ -1,7 +1,7 @@
 // src/languages/num2Word.ts
 import { trimLeadingNegatives, getWholeNumber, getDecimalNumber } from '../utils/num2French';
 
-export function num2French(number: number | string): string {
+const num2French =(number: number | string): string => {
     if (number === '' || (typeof number !== 'number' && typeof number !== 'string')) {
         throw new Error('Must supply a number or non-empty string argument.');
     }

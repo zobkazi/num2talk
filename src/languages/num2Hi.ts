@@ -2,7 +2,7 @@
 
 import { trimLeadingNegatives, getWholeNumber, getDecimalNumber } from '../utils/num2Hindi';
 
-export function num2Hindi(number: number | string): string {
+const num2Hindi =(number: number | string): string => {
     if (number === '' || (typeof number !== 'number' && typeof number !== 'string')) {
         throw new Error('संख्या या खाली स्ट्रिंग प्रदान करनी होगी।');
     }
