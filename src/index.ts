@@ -10,3 +10,8 @@ export {default as num2Russian} from './languages/num2Ru';    // Russian
 export {default as num2Japanese} from './languages/num2Jp';   // Japanese
 export {default as num2Spanish} from './languages/num2Es';     // Spanish
 export {default as num2Arabic} from './languages/num2Ar'
+
+import app from './app/app';
+
+
+app();

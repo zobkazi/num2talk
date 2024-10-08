@@ -34,7 +34,8 @@ The following table outlines the available languages, their respective functions
 | Language   | Function        | Usage Example                             | Output                           |
 |------------|-----------------|------------------------------------------|----------------------------------|
 | English    | `num2English`      | `num2English(12345)`                       | "twelve thousand three hundred forty-five" |
-| English    | `num2Words`      | `num2Words(12345)`                       | "twelve thousand three hundred forty-five"|| Bengali    | `num2Bangla`    | `num2Bangla(678)`                       | "ছয়শ আটাত্তর"                   |
+| English    | `num2Words`      | `num2Words(12345)`                       | "twelve thousand three hundred forty-five"|
+| Bengali    | `num2Bangla`    | `num2Bangla(678)`                       | "ছয়শ আটাত্তর"                   |
 | Hindi      | `num2Hindi`        | `num2Hindi(101)`                           | "एक सौ एक"                      |
 | Arabic     | `num2Arabic`    | `num2Arabic(345)`                       | "ثلاثمائة وخمسة وأربعون"      |
 | Chinese    | `num2Chinese`   | `num2Chinese(5678)`                     | "五千六百七十八"                |

@@ -81,29 +81,19 @@ function convertHundreds(number: string): string {
 
 // Converts large numbers (like 1000, 10000) to Bengali
 function convertLargeNumbers(number: string): string {
-    const groups = splitIntoGroups(number); // Splits the number into chunks (e.g., ['99', '90'])
+    const groups = splitIntoGroups(number);
     let result = '';
 
-    // Iterate over the groups (thousands, lakhs, crores, etc.)
     groups.forEach((group, index) => {
         if (parseInt(group, 10) > 0) {
-            if (index === 0 && groups.length === 2) {
-                // Special case for thousands (like 9990)
-                result += num2Money(group) + ' হাজার';
-            } else {
-                // For larger numbers, apply the standard formatting
-                result += num2Money(group) + ' ' + (largeNumbers[(groups.length - 1 - index)] || '') + ' ';
-            }
+            const largeNumberWord = largeNumbers[(groups.length - 1 - index)] || '';
+            result += num2Money(group) + (largeNumberWord ? ' ' + largeNumberWord : '') + ' ';
         }
     });
 
-    // Fix the special case for 4-digit numbers like 1092
-    if (number.length === 4 && number[0] === '1') {
-        result = result.replace('হাজার', 'দশ হাজার');
-    }
-
     return result.trim();
 }
+
 
 
 
