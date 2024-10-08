@@ -1,6 +1,6 @@
 {
   "name": "num2talk",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
@@ -50,7 +50,7 @@
     "type": "git",
     "url": "https://github.com/zobkazi/num2talk"
   },
-  "homepage": "https://github.com/zobkazi/num2talk",
+  "homepage": "https://num2talk.vercel.app",
   "bugs": {
     "url": "https://github.com/zobkazi/num2talk/issues"
   },

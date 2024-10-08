@@ -49,26 +49,34 @@ The following table outlines the available languages, their respective functions
 
 Here’s how to use some of the functions:
 
-#### English
+####  Using `num2English`
 
+The `num2English` function takes a number as input and returns the corresponding English word.
 ```javascript
-import { num2Word } from 'num2talk';
-console.log(num2Word(12345)); // "twelve thousand three hundred forty-five"
+import {num2Arabic, num2Bangla, num2Chinese, num2English, num2Hindi,num2Japanese, num2Portuguese, num2Russian, num2Spanish,num2Urdu} from 'num2talk'
+
+const App = () => {
+    const number = 12345
+
+    console.log(num2English(number))
+    console.log(num2Hindi(number))
+    console.log(num2Japanese(number))
+    console.log(num2Portuguese(number))
+    console.log(num2Russian(number))
+    console.log(num2Spanish(number))
+    console.log(num2Urdu(number))
+    console.log(num2Arabic(number))
+    console.log(num2Bangla(number))
+    console.log(num2Chinese(number))
+  return (
+    <div>App</div>
+  )
+}
+
+export default App
+
 ```
 
-#### Bengali
-
-```javascript
-import { num2Bangla } from 'num2talk';
-console.log(num2Bangla(678)); // "ছয়শ আটাত্তর"
-```
-
-#### Hindi
-
-```javascript
-import { num2Hi } from 'num2talk';
-console.log(num2Hi(101)); // "एक सौ एक"
-```
 
 ### Contributing
 
