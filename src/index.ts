@@ -12,7 +12,7 @@ import num2Japanese from './languages/num2Jp';   // Japanese
 import num2Spanish from './languages/num2Es';     // Spanish
 
 // Exporting all imported functions
-export default {
+export {
     num2English,
     num2Bangla,
     numToWords,
