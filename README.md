@@ -1,8 +1,8 @@
+# Bridging Languages Through Number Translation – Supporting 10 Popular Languages.
+
+
 ### num2talk Documentation
 
----
-
-## num2talk
 
 `num2talk` is a JavaScript package that provides functions to convert numbers into words in various languages, including English, Bengali, Hindi, Arabic, Chinese, Urdu, Portuguese, Russian, Japanese, and Spanish.
 
@@ -33,9 +33,9 @@ The following table outlines the available languages, their respective functions
 
 | Language   | Function        | Usage Example                             | Output                           |
 |------------|-----------------|------------------------------------------|----------------------------------|
-| English    | `num2Word`      | `num2Word(12345)`                       | "twelve thousand three hundred forty-five" |
-| Bengali    | `num2Bangla`    | `num2Bangla(678)`                       | "ছয়শ আটাত্তর"                   |
-| Hindi      | `num2Hi`        | `num2Hi(101)`                           | "एक सौ एक"                      |
+| English    | `num2English`      | `num2English(12345)`                       | "twelve thousand three hundred forty-five" |
+| English    | `num2Words`      | `num2Words(12345)`                       | "twelve thousand three hundred forty-five"|| Bengali    | `num2Bangla`    | `num2Bangla(678)`                       | "ছয়শ আটাত্তর"                   |
+| Hindi      | `num2Hindi`        | `num2Hindi(101)`                           | "एक सौ एक"                      |
 | Arabic     | `num2Arabic`    | `num2Arabic(345)`                       | "ثلاثمائة وخمسة وأربعون"      |
 | Chinese    | `num2Chinese`   | `num2Chinese(5678)`                     | "五千六百七十八"                |
 | Urdu       | `num2Urdu`      | `num2Urdu(901)`                         | "نو سو ایک"                     |
