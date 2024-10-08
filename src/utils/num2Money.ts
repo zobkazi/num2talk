@@ -39,8 +39,9 @@ const tensNumbers: Record<string, string> = {
 
 // Bangla words for large numbers (like thousand, lakh, crore)
 const largeNumbers: Record<string, string> = {
-    '1': 'হাজার', '2': 'লক্ষ', '3': 'কোটি', '4': 'অর্বুদ',
-    '5': 'কুবের', '6': 'শঙ্কু', '7': 'সিংঘু'
+   '1': 'হাজার', '2': 'লক্ষ', '3': 'কোটি', '4': 'অর্থ',
+    '5': 'পড়শ', '6': 'চোদ্দ', '7': 'পঁইল্ল', '8': 'সন্তস', '9': 'বিলিয়ন',
+    '10': 'দশেরী', '11': 'একাদশ',
 };
 
 // Main export function to handle both small and large numbers
@@ -80,24 +81,30 @@ function convertHundreds(number: string): string {
 
 // Converts large numbers (like 1000, 10000) to Bengali
 function convertLargeNumbers(number: string): string {
-    const groups = splitIntoGroups(number);
+    const groups = splitIntoGroups(number); // Splits the number into chunks (e.g., ['99', '90'])
     let result = '';
 
     // Iterate over the groups (thousands, lakhs, crores, etc.)
     groups.forEach((group, index) => {
         if (parseInt(group, 10) > 0) {
-            // Correctly handle numbers like 1092 (one thousand ninety-two)
-            result += num2Bn(group) + ' ' + (largeNumbers[(groups.length - 1 - index)] || '') + ' ';
+            if (index === 0 && groups.length === 2) {
+                // Special case for thousands (like 9990)
+                result += num2Bn(group) + ' হাজার';
+            } else {
+                // For larger numbers, apply the standard formatting
+                result += num2Bn(group) + ' ' + (largeNumbers[(groups.length - 1 - index)] || '') + ' ';
+            }
         }
     });
 
-    // Special case for 4-digit numbers like 1092 (to avoid incorrect grouping like "দশ হাজার")
+    // Fix the special case for 4-digit numbers like 1092
     if (number.length === 4 && number[0] === '1') {
-        result = result.replace('হাজার', 'এক হাজার');
+        result = result.replace('হাজার', 'দশ হাজার');
     }
 
     return result.trim();
 }
+
 
 
 

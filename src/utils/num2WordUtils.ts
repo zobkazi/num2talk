@@ -16,10 +16,33 @@ export const tens: Record<string, string> = {
 };
 
 // Larger number groups (thousands, millions, etc.)
-export const larger: Record<string, string> = {
-    '1': 'thousand', '2': 'million', '3': 'billion', '4': 'trillion',
-    // Extend this as needed
-};
+export const larger: Record<string, string> =  {'1': 'thousand', '2': 'million', '3': 'billion', '4': 'trillion', '5': 'quadrillion',
+    '6': 'quintillion', '7': 'sextillion', '8': 'septillion', '9': 'octillion', '10': 'nonillion',
+    '11': 'decillion', '12': 'undecillion', '13': 'duodecillion', '14': 'tredecillion', '15': 'quattuordecillion',
+    '16': 'quindecillion', '17': 'sexdecillion', '18': 'septendecillion', '19': 'octodecillion',
+    '20': 'novemdecillion', '21': 'vigintillion', '22': 'unvigintillion', '23': 'duovigintillion',
+    '24': 'trevigintillion', '25': 'quattuorvigintillion', '26': 'quinvigintillion', '27': 'sexvigintillion',
+    '28': 'septenvigintillion', '29': 'octovigintillion', '30': 'novemvigintillion', '31': 'trigintillion',
+    '32': 'untrigintillion', '33': 'duotrigintillion', '34': 'tretrigintillion', '35': 'quattuortrigintillion',
+    '36': 'quintrigintillion', '37': 'sextrigintillion', '38': 'septentrigintillion', '39': 'octotrigintillion',
+    '40': 'novemtrigintillion', '41': 'quadragintillion', '42': 'unquadragintillion', '43': 'duoquadragintillion',
+    '44': 'trequadragintillion', '45': 'quattuorquadragintillion', '46': 'quinquadragintillion',
+    '47': 'sexquadragintillion', '48': 'septenquadragintillion', '49': 'octoquadragintillion',
+    '50': 'novemquadragintillion', '51': 'quinquagintillion', '52':'unquinquagintillion',
+    '53': 'duoquinquagintillion', '54': 'trequinquagintillion', '55': 'quattuorquinquagintillion',
+    '56': 'quinquinquagintillion', '57': 'sexquinquagintillion', '58': 'septenquinquagintillion',
+    '59': 'octoquinquagintillion', '60': 'novemquinquagintillion', '61': 'sexagintillion',
+    '62': 'unsexagintillion', '63': 'duosexagintillion', '64': 'tresexagintillion', '65': 'quattuorsexagintillion',
+    '66': 'quinsexagintillion', '67': 'sexsexagintillion', '68': 'septensexagintillion', '69': 'octosexagintillion',
+    '70': 'novemsexagintillion', '71': 'septuagintillion', '72': 'unseptuagintillion', '73': 'duoseptuagintillion',
+    '74': 'treseptuagintillion', '75': 'quattuorseptuagintillion', '76': 'quinseptuagintillion',
+    '77': 'sexseptuagintillion', '78': 'septenseptuagintillion', '79': 'octoseptuagintillion',
+    '80': 'novemseptuagintillion', '81': 'octogintillion', '82': 'unoctogintillion', '83': 'duooctogintillion',
+    '84': 'treoctogintillion', '85': 'quattuoroctogintillion', '86': 'quinoctogintillion', '87': 'sexoctogintillion',
+    '88': 'septoctogintillion', '89': 'octooctogintillion', '90': 'novemoctogintillion', '91': 'nonagintillion',
+    '92': 'unnonagintillion', '93': 'duononagintillion', '94': 'trenonagintillion', '95': 'quattuornonagintillion',
+    '96': 'quinnonagintillion', '97': 'sexnonagintillion', '98': 'septennonagintillion', '99': 'octononagintillion',
+    '100': 'novemnonagintillion', '101': 'centillion'};
 
 // Trimming utility functions
 export function trimLeadingNegatives(number: string): string {
